@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import B3 from './B3';
 
-class B2 extends Component {
-  render(){
-    return(
-      <div>
-        <h2>B2</h2>
-        <B3 btn={this.props.btn} />
-      </div>
-    )
-  }
+const B2 = ({btn}) => {
+  return (
+    <div>
+      <h2>B2</h2>
+      <div>{btn}</div>
+
+      <B3 btn={btn} />
+    </div>
+  )
 }
 
 export default B2;

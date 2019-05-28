@@ -1,17 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import A2 from './A2';
 
-class A1 extends Component {
-  render(){
-    return(
-	  	<div>
-				<h2>A1</h2>
-				<div>{this.props.num}</div>
+const A1 = ({num}) => {
+  return (
+    <div>
+      <h2>A1</h2>
+      <div>{num}</div>
 
-				<A2 num={this.props.num} />
-			</div>
-    )
-  }
+      <A2 num={num} />
+    </div>
+  )
 }
 
 export default A1;
