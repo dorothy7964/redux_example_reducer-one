@@ -17,6 +17,33 @@ npm install --save redux react-redux
 
 리액트에서 리덕스를 사용할 수있게 한다.
 
+## reducers 생성
+
+```javascript
+// combineReducers 를 사용하여 하나의 리듀서로 합쳐줄 수 있습니다. 					
+import { combineReducers } from 'redux';					
+
+// 현재상태		
+// App의 state라 생각하면 된다.		
+// App의 state와 달리 누구나 쓸 수 있다.		
+const initialState = {		 
+  count : 20			        
+}			                     
+
+// state에 initialState를 넣은 변수가 control
+const control = (state = initialState) => {
+  return state;					
+}					
+
+// control를 리듀서로 합쳐준  변수가 reducers
+const reducers = combineReducers({					
+  control					
+});					
+
+// reducers를 내보내준다.
+export default reducers;					
+```
+
 ## Redux 연결
 
 ```javascript
@@ -45,32 +72,6 @@ ReactDOM.render(
 ```
 
 리덕스파일을 스토어에 보관 한 것을 상수 store에 넣기.
-
-## reducers
-```javascript
-// combineReducers 를 사용하여 하나의 리듀서로 합쳐줄 수 있습니다. 					
-import { combineReducers } from 'redux';					
-
-// 현재상태		
-// App의 state라 생각하면 된다.		
-// App의 state와 달리 누구나 쓸 수 있다.		
-const initialState = {		 
-  count : 20			        
-}			                     
-
-// state에 initialState를 넣은 변수가 control
-const control = (state = initialState) => {
-  return state;					
-}					
-
-// control를 리듀서로 합쳐준  변수가 reducers
-const reducers = combineReducers({					
-  control					
-});					
-
-// reducers를 내보내준다.
-export default reducers;					
-```
 
 ## connect
 
