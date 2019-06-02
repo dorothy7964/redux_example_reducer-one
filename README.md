@@ -1,14 +1,4 @@
-# react-router-dom
-
-항상 하위 컴포넌트에게 주는 3가지 정보를 가지고 있다.
-
-
-## Installation
-
-```sh
-# npm
-npm install --save redux react-redux
-```
+# redux react-redux
 
 ### `redux`
 리덕스만을 위한것
@@ -16,6 +6,16 @@ npm install --save redux react-redux
 ### `react-redux`
 
 리액트에서 리덕스를 사용할 수있게 한다.
+
+## Installation
+
+```sh
+# npm
+npm install --save redux react-redux
+
+# yarn
+yarn add redux react-redux
+```
 
 ## reducers 생성
 
